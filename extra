@@ -1,0 +1,73 @@
+https://code.visualstudio.com/
+https://git-scm.com/downloads
+https://github.com/
+https://nodejs.org/en/
+
+/*************************************
+    Data Type Required (JSON)
+*************************************/
+JSON
+JavaScript Object Notation
+[
+    {
+        name:"a",
+        class:"Ai"
+    },
+    {
+        name:"b",
+        class:"React"
+    }
+]
+
+/*************************************
+    Package.json
+*************************************/
+> About Application
+> Version
+> Dependency mang
+> Start Script
+
+/*************************************
+    Steps To create package.json
+*************************************/
+> Go inside folder using terminal/cmd
+> npm init
+> Answer all questions
+> type 'yes'
+
+
+/*************************************
+   Dependency In React
+*************************************/
+> Local Dependency=> Local to folder
+> Global Dependency=> local to system
+    help to build/create/start/moniter
+
+/*************************************
+  Step To local Dependency
+*************************************/
+> Go inside folder using terminal/cmd
+> npm install <package name>/npm i <package name>
+  Example > npm install @aakashdeveloper/create-node-app
+
+/*************************************
+  Step To Global Dependency
+*************************************/
+window => Run cmd as admin
+mac/linux=> use 'sudo' before command
+> Go inside folder using terminal/cmd
+> npm install -g <package name>/npm i -g <package name>
+
+  Example > npm install -g create-react-app
+
+/*************************************
+  Step To Create React App
+*************************************/
+Note: You must have create-react-app globally with You 
+if not:
+> npm install -g create-react-app
+> Go inside folder using terminal/cmd
+> create-react-app firstapp
+> cd firstapp
+> npm start
+> In browser > http://localhost:3000/
