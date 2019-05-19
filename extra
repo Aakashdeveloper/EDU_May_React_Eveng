@@ -71,3 +71,105 @@ if not:
 > cd firstapp
 > npm start
 > In browser > http://localhost:3000/
+
+/*************************************
+  Files Explain
+*************************************/
+ReadMe        => Provide information of Application 
+package.json  => Contain start command/Dependency/information of app
+.gitignore    => Things you dont want to push
+src           => All App Development happne here
+public        => Static files css/js/images/assets
+node_modules  => all node modules here
+
+/*************************************
+        Component in React
+*************************************/
+Functional              |    Class Base
+--------------------------------------
+Light in weight         |   Heavy as compare to functional 
+Cannot handle State     |   Can handle State
+Display or render data  |   Logic and render both
+Normal Es6 Function     |   Use Class to Create Component
+
+----------------------------------------------
+// ES5(Ecma Script)
+function add(a,b){
+    return a+b
+}
+
+// Es6
+>>> const add = (a,b) => { return a+b }
+
+add(1,2)
+
+>>> class add {}
+
+/*************************************
+         DataTypes
+*************************************/
+string    =  "a" "dvdbre" "24353" '4ter'  'tgt"  "gt' 'true'
+number    = 88 098.90890 89089
+boolean   = true/false
+
+
+/*************************************
+         Declare Variable
+*************************************/
+var a = "ds"
+var b = 4565
+var c = true
+<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>
+
+
+var a = 10
+step1 > var a
+step2 > a = 10
+
+var => Redeclare and reassign
+let => Dont Redeclare but we can reassign
+const => Cannot Redeclare and nor reassign
+
+const sum = (a,b) => {
+    var i = 10
+}
+
+const p = "hi"
+for(i=0;i<10;i++){
+    let h = "inside for"
+    console.log(p + i)
+}
+
+/*************************************
+        Conact
+*************************************/
+var a = "10"
+
+// Es5
+var b = "my age is "+a
+
+// Es6
+var c = `my age is ${a}`
+//
+Inline(inside component) > css for each component > Global Css
+
+
+/*************************************
+        State & Props
+*************************************/
+State => Act like Local Variable
+Props=>  help to tarnsfer State
+
+A             ------props--------->           B
+state1                                      state2
+
+
+https://www.w3schools.com/jsref/jsref_map.asp
+https://www.w3schools.com/jsref/jsref_filter.asp
+https://www.w3schools.com/jsref/jsref_indexof.asp
+
+https://www.w3schools.com/bootstrap/default.asp
+Grid Basic
+Panel
+Button
+navbar

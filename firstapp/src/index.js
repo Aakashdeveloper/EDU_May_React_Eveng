@@ -1,12 +1,49 @@
-import React from 'react';
+import React, {Component} from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+import Books from './component/Books';
+import Header from './component/Header';
+import NewsList from './component/NewsList';
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+import JSON from './db.json'
+
+// JSX
+class App extends Component{
+
+    constructor(){
+        super()
+
+        this.state={
+            news:JSON
+        }
+    }
+
+    render(){
+        console.log(this.state.news)
+        return (
+            <div>
+                <header>
+                    <Header/>
+                </header>
+                    <NewsList/>
+                <hr/>
+            </div>
+        )
+    }
+}
+
+ReactDOM.render(<App/>, document.getElementById('root'))
+
+/*
+const App = () => {
+    return (
+        <div>
+            <header>
+                <Header/>
+            </header>
+                <NewsList/>
+            <hr/>
+        </div>
+    )
+}
+*/
