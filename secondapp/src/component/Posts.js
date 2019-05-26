@@ -1,6 +1,15 @@
 import React, {Component} from 'react';
+import { Link } from 'react-router-dom'
 
 class Posts extends Component {
+    constructor(props){
+        super(props)
+
+        this.state= {
+            pathname: 'javascript'
+        }
+    }
+
     render(){
         return(
             <div className="panel panel-warning">
@@ -25,6 +34,12 @@ class Posts extends Component {
                         book. It has survived not only five centuries,
                         but also the leap into electronic typesetting, 
                     </p>
+                    <h2>JavaScript</h2>
+                    <Link to="/posts/JavaScript?name='article'">Details</Link>
+                    <h2>AWS</h2>
+                    <Link to="/posts/AWS">Details</Link>
+                    <h2>NodeJs</h2>
+                    <Link to="/posts/NodeJs">Details</Link>
                 </div>
             </div>
         )

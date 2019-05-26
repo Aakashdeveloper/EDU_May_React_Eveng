@@ -4,6 +4,8 @@ import { BrowserRouter, Route, Link} from 'react-router-dom';
 import Home from './Home';
 import Profile from './Profile';
 import Posts from './Posts';
+import PostDetail from './PostDetails';
+import Lifecycle from './Lifecycle';
 
 class Routing extends Component {
     render(){
@@ -22,21 +24,20 @@ class Routing extends Component {
                         </div>
                         <div className="collapse navbar-collapse" id="myNavbar">
                         <ul className="nav navbar-nav">
-                            <li> <Link to="/">Home</Link></li>
+                            <li><Link to="/">Home</Link></li>
                             <li><Link to="/posts">Posts</Link></li>
                             <li><Link to="/profile">Profile</Link></li> 
-                        </ul>
-                        <ul className="nav navbar-nav navbar-right">
-                            <li><a href="#"><span className="glyphicon glyphicon-user"></span> Sign Up</a></li>
-                            <li><a href="#"><span className="glyphicon glyphicon-log-in"></span> Login</a></li>
+                            <li><Link to="/lifecycle">Lifecycle</Link></li> 
                         </ul>
                         </div>
                     </div>
                     </nav>
                     <hr/>
                     <Route exact path="/" component={Home}></Route>
-                    <Route path="/posts" component={Posts}></Route>
+                    <Route exact path="/posts" component={Posts}></Route>
+                    <Route exact path="/posts/:id" component={PostDetail}></Route>
                     <Route path="/profile" component={Profile}></Route>
+                    <Route path="/lifecycle" component={Lifecycle}></Route>
                 </div>
             </BrowserRouter>
         )

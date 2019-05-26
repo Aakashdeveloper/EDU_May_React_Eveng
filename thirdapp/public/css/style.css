@@ -1,0 +1,103 @@
+.banner .main_cover{
+    background: url('../images/cover.png');
+    height:400px;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+}
+
+.banner .logo{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    position: absolute;
+    top:50%;
+    left:38%;
+    transform:translate(-50% -50%);
+    width: 100%;
+    color:#ffffff;
+    height: 70px;
+    font-size:45px;
+}
+
+.banner span{
+    display: block;
+    height: 20px;
+    background: #2196f3;
+}
+
+/******* Artist Styling *******/
+
+.artist_list {
+    box-sizing:border-box;
+    padding:10px 30px;
+}
+
+.artist_list .artist_item{
+    display:block;
+    height:300px;
+    background-size: cover !important;
+    position: relative;
+    margin-bottom:20px;
+}
+
+.artist_list .artist_item div{
+    background: #2196f3;
+    color:white;
+    position: absolute;
+    font-size:18px;
+    bottom:0;
+    right:0;
+    padding:10px;
+}
+
+
+/*** Header ***/
+header{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    color:#949494 !important;
+    font-size:35px;
+    text-decoration: none;
+    border-bottom:1px solid #2196f3;
+    padding-bottom:10px
+}
+
+header a{
+    color:#2196f3 !important;
+}
+
+/**** Artist Bio ****/
+
+.artist_bio{
+    box-sizing: border-box;
+    padding:10px 30px;
+}
+
+.artist_bio .artist_image span{
+    width:130px;
+    height:130px;
+    display: block;
+    background-size: cover !important;
+    margin: 0 auto;
+}
+
+.artist_bio h3{
+    font-weight: 100;
+    text-align: center;
+    font-size: 30px;
+    margin: 10px 0;
+}
+
+.artist_bio .bio_text{
+    font-weight:100;
+    font-size:14px;
+    color:#3a3a3a;
+}
+
+.album_list{
+    margin:20px;
+}
+.album_list > img{
+    float:left;
+    width:40%;
+    margin:10px;
+}
