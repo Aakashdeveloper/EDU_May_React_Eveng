@@ -208,3 +208,13 @@ function myFunction() {
 *****************************/
 npm install -g json-server
 json-server --watch db.json --port 8900
+
+
+
+ npm install redux react-redux react-router-dom
+
+
+/****************************
+    Reducer
+*****************************/
+ view  => action => reducer => store  => view
