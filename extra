@@ -218,3 +218,7 @@ json-server --watch db.json --port 8900
     Reducer
 *****************************/
  view  => action => reducer => store  => view
+
+
+
+ npm i redux react-redux react-router-dom redux-promise
