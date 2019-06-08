@@ -222,3 +222,14 @@ json-server --watch db.json --port 8900
 
 
  npm i redux react-redux react-router-dom redux-promise
+
+
+ https://fontawesome.com/icons
+
+
+ ///
+ Redux 3
+
+ https://api.simplyrets.com/properties
+
+ npm install axios redux react-router-dom redux-thunk react-redux
