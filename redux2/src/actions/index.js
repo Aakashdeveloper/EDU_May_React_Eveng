@@ -82,3 +82,12 @@ export function handleLikes(array,id){
         payload:output
     }
 }
+
+export function postData(fname, lname){
+    console.log('Coming in action where firstname =', fname, 'lname is', lname)
+
+    return{
+        type:'POST_FORM',
+        payload:''
+    }
+}

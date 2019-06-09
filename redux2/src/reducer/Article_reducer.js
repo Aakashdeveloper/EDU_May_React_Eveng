@@ -10,6 +10,8 @@ export default function(state={},action){
             return {...state,selected:action.payload}
         case 'HANDLE_LIKES_ARTICLE':
             return {...state, selected:[action.payload]}
+        case 'POST_FORM':
+            return {...state, data:[]}
         default:
             return state
     }

@@ -233,3 +233,59 @@ json-server --watch db.json --port 8900
  https://api.simplyrets.com/properties
 
  npm install axios redux react-router-dom redux-thunk react-redux
+
+
+ npm run build
+
+ step to run react app on nginx windows
+ https://stackoverflow.com/questions/13070986/nginx-windows-setting-up-sites-available-configs
+
+ nginx.conf code
+ server {
+        listen       8081;
+        server_name  localhost;
+
+        location / {
+	    root   /var/www/react-app;
+            index  index.html index.htm;
+        }
+    }
+
+final step>
+type 'nginx' in cmd
+
+step1:
+ npm run build
+
+step 2:
+put build in root folder
+
+Step 3:
+Add configuration in nginx.conf file
+
+Step4:
+type 'nginx' in cmd
+
+/////////////////
+step1
+> docker build . -t propertyimage
+
+step2:
+docker run -p 3000:8000 propertyimage
+
+
+docker image ls
+docker exec <container_id> sh
+
+
+https://docs.docker.com/
+
+
+/////////
+ "chai": "^4.2.0",
+    "chai-http": "^4.3.0",
+    "mocha": "^6.1.4",
+    "sinon": "^7.3.2"
+
+
+https://github.com/Aakashdeveloper/Jan_React_Mrng/blob/master/testApp/__tests__/CheckboxWithLabel-test.js
