@@ -1,28 +1,23 @@
-name: SonarQube Scan
-
-on:
-  push:
-    branches:
-      - main
+name: Build
+on: push
 
 jobs:
-  sonarqube: SonarQube Scan
+ 
+  sonarqube:
+    name: SonarQube Scan
     runs-on: ubuntu-latest
-
-    steps: 
+    steps:
       - name: Checkout source code
         uses: actions/checkout@v2
         with:
           fetch-depth: 0
-
       - name: Setup Node.js
         uses: actions/setup-node@v1
         with:
-          node-version: 16
-
+          node-version: 12
       - name: Install dependencies
         run: yarn install
-
+     
       - name: SonarQube Scan
         uses: sonarsource/sonarqube-scan-action@master
         env:
